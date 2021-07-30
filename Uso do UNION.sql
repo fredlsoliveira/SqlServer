@@ -1,4 +1,3 @@
-
 --EXEMPLO 1 USANDO UNION
     SELECT city
     FROM customers
