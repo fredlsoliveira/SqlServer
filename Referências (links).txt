@@ -1,0 +1,42 @@
+
+REFERÊNCIAS (LINKS)
+
+---------------------------------------------------
+Especificações de capacidade máxima do SQL Server
+https://docs.microsoft.com/pt-br/sql/sql-server/maximum-capacity-specifications-for-sql-server?view=sql-server-ver15
+
+---------------------------------------------------
+Tipos de dados (Transact-SQL)
+https://docs.microsoft.com/pt-br/sql/t-sql/data-types/data-types-transact-sql?view=sql-server-ver15
+
+---------------------------------------------------
+Operadores de comparação (Transact-SQL)
+https://docs.microsoft.com/pt-br/sql/t-sql/language-elements/comparison-operators-transact-sql?redirectedfrom=MSDN&view=sql-server-ver15
+
+---------------------------------------------------
+Operadores aritméticos (Transact-SQL)
+https://docs.microsoft.com/pt-br/sql/t-sql/language-elements/arithmetic-operators-transact-sql?redirectedfrom=MSDN&view=sql-server-ver15
+
+---------------------------------------------------
+Operadores lógicos (Transact-SQL)
+https://docs.microsoft.com/pt-br/sql/t-sql/language-elements/logical-operators-transact-sql?redirectedfrom=MSDN&view=sql-server-ver15
+
+---------------------------------------------------
+DDL (Data Definition Language)
+https://docs.microsoft.com/pt-br/sql/t-sql/queries/queries?redirectedfrom=MSDN&view=sql-server-ver15
+
+---------------------------------------------------
+DDL (Data Definition Language)
+https://docs.microsoft.com/pt-br/previous-versions/sql/sql-server-2012/ff848799(v=sql.110)?redirectedfrom=MSDN
+
+---------------------------------------------------
+DCL (Data Control Language)
+https://social.technet.microsoft.com/wiki/contents/articles/34477.sql-server-commands-dml-ddl-dcl-tcl.aspx#Data_Control_Language_DCL
+
+---------------------------------------------------
+TCL (Transaction Control Language)
+https://social.technet.microsoft.com/wiki/contents/articles/34477.sql-server-commands-dml-ddl-dcl-tcl.aspx#Transaction_Control_Language_TCL
+
+---------------------------------------------------
+Sub-Consultas / Subquerys Parte 1
+https://docs.microsoft.com/pt-br/previous-versions/sql/sql-server-2008-r2/ms189575(v=sql.105)?redirectedfrom=MSDN
