@@ -38,5 +38,5 @@ TCL (Transaction Control Language)
 https://social.technet.microsoft.com/wiki/contents/articles/34477.sql-server-commands-dml-ddl-dcl-tcl.aspx#Transaction_Control_Language_TCL
 
 ---------------------------------------------------
-Sub-Consultas / Subquerys Parte 1
+Sub-Consultas / Subquerys
 https://docs.microsoft.com/pt-br/previous-versions/sql/sql-server-2008-r2/ms189575(v=sql.105)?redirectedfrom=MSDN
