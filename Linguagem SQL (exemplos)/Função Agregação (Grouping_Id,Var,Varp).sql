@@ -1,0 +1,34 @@
+use curso
+
+--CONHECENDO AS TABELAS
+SELECT * FROM cidades
+SELECT * FROM senso_2013
+SELECT * FROM uf
+SELECT * FROM regiao_uf
+
+/* GROUPING_ID USADO APENAS NA LISTA SELECT <select>, NA CLAUSULA HAVING OU ORDER BY, QUANDO GROUP BY ESPECIFICADO */
+SELECT r.regiao,
+	c.uf,
+	SUM(c.populacao) AS populacao,
+	GROUPING_ID(r.regiao,c.uf) AS grupo 
+FROM cidades c
+INNER JOIN regiao_uf r ON c.cod_uf = r.estado
+GROUP BY ROLLUP(r.regiao,c.uf)
+
+/* (VAR) RETORNA A VARIANCIA ESTATISTICA DE TODOS OS VALORES DA EXPRESSAO */
+SELECT VAR(populacao)
+FROM cidades
+
+SELECT uf,
+	VAR(populacao)
+FROM cidades
+GROUP BY uf
+
+/* (VARP) RETORNA A VARIANCIA ESTATISTICA PARA PREENCHIMENTO DE TODOS OS VALORES */
+SELECT VARP(populacao)
+FROM cidades
+
+SELECT uf,
+    VARP(populacao)
+FROM cidades
+GROUP BY uf
