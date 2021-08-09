@@ -13,8 +13,44 @@ SELECT STDEV(populacao) FROM cidades
 SELECT STDEVP(populacao) FROM cidades
 
 /* (GROUPING) AGRUPA TODOS OS VALORES E ADD COLUNA COM (0) NAO AGREGADO E (1) AGREGADO */
-SELECT	uf,
-		SUM(populacao)	AS SomaPopulacao,
-		GROUPING(uf)	AS Grupo
+SELECT uf,
+    SUM(populacao) AS SomaPopulacao,
+    GROUPING(uf) AS Grupo
 FROM cidades
 GROUP BY uf WITH ROLLUP -- COMANDO COMPLEMENTO DO GROUPING
+
+--EXEMPLO SELECT
+SELECT c.nome_mun,
+	c.populacao AS senso_2007,
+	s.populacao AS senso_2013,
+	(100/CAST(c.populacao AS FLOAT)) * CAST(s.populacao AS FLOAT) - 100 pct_cresc
+FROM cidades c
+INNER JOIN senso_2013 s ON c.cod_uf+c.cod_mun = s.cod_mun
+
+
+/* GROUPING_ID USADO APENAS NA LISTA SELECT <select>, NA CLAUSULA HAVING OU ORDER BY, QUANDO GROUP BY ESPECIFICADO */
+SELECT r.regiao,
+	c.uf,
+	SUM(c.populacao) AS populacao,
+	GROUPING_ID(r.regiao,c.uf) AS grupo 
+FROM cidades c
+INNER JOIN regiao_uf r ON c.cod_uf = r.estado
+GROUP BY ROLLUP(r.regiao,c.uf)
+
+/* (VAR) RETORNA A VARIANCIA ESTATISTICA DE TODOS OS VALORES DA EXPRESSAO */
+SELECT VAR(populacao)
+FROM cidades
+
+SELECT uf,
+	VAR(populacao)
+FROM cidades
+GROUP BY uf
+
+/* (VARP) RETORNA A VARIANCIA ESTATISTICA PARA PREENCHIMENTO DE TODOS OS VALORES */
+SELECT VARP(populacao)
+FROM cidades
+
+SELECT uf,
+	VARP(populacao)
+FROM cidades
+GROUP BY uf
