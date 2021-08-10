@@ -50,11 +50,11 @@ CREATE TABLE venda
 
 CREATE TABLE venda_item
 (
-	idVendaItem	INT PRIMARY KEY IDENTITY(1,1),
-	quantidade	INT NOT NULL,
-	subtotal	DECIMAL(8,2) NOT NULL,
+	idVendaItem	INT PRIMARY KEY IDENTITY(1,1),	
 	idVenda		INT NOT NULL,
 	idLivro		INT NOT NULL,
+	quantidade	INT NOT NULL,
+	subtotal	DECIMAL(8,2) NOT NULL,
 	FOREIGN KEY(idVenda) REFERENCES venda(idVenda),
 	FOREIGN KEY(idLivro) REFERENCES livro(idLivro) 
 )
