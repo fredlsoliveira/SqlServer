@@ -35,3 +35,29 @@ SELECT 'Teste '+STR(123.45, 6,1)
 
 /* (CONCAT) RETORNA A CONCATENACAO DE DOIS OU MAIS VALORES */
 SELECT CONCAT(CURRENT_USER, ' Seu Saldo é R$ ', 11.00, ' em ', DAY(GETDATE()),'/',MONTH(GETDATE()),'/',YEAR(GETDATE())) AS Resultado
+
+
+/* (REPLACE) SUBSTITUI CARACTERES ESPECIFICADO */
+--1° EXEMPLO
+SELECT REPLACE('abcdefghicde', 'cde', 'xxx')
+
+--2° EXEMPLO
+SELECT REPLACE('Isso é teste', 'teste', 'Produção')
+
+--3° EXEMPLO
+SELECT REGIAO, REPLACE(REGIAO,'Sul','South') AS Para
+FROM regiao_uf
+
+--4° EXEMPLO > UPDATE USANDO REPLACE
+CREATE TABLE pessoa
+(
+	nome VARCHAR(50)
+)
+
+INSERT INTO pessoa VALUES('Jose')
+INSERT INTO pessoa VALUES('Maria')
+INSERT INTO pessoa VALUES('Ana')
+
+SELECT * FROM pessoa
+
+UPDATE pessoa SET nome=REPLACE(nome, 'a','4')
