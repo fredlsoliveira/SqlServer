@@ -23,3 +23,15 @@ DECLARE @string_to_trim VARCHAR(60)
 SET @string_to_trim = '     Cinco espaços no inicio'
 SELECT 'Texto sem espaço'+LTRIM(@string_to_trim)
 SELECT 'Texto com espaço'+@string_to_trim
+
+
+/* (STR) CONVERTER NUMERO EM TEXTO */
+--1° EXEMPLO
+SELECT STR(123.45, 6,1)
+
+--2° EXEMPLO
+SELECT 'Teste '+STR(123.45, 6,1)
+
+
+/* (CONCAT) RETORNA A CONCATENACAO DE DOIS OU MAIS VALORES */
+SELECT CONCAT(CURRENT_USER, ' Seu Saldo é R$ ', 11.00, ' em ', DAY(GETDATE()),'/',MONTH(GETDATE()),'/',YEAR(GETDATE())) AS Resultado
