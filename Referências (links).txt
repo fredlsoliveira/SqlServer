@@ -66,3 +66,7 @@ https://docs.microsoft.com/pt-br/sql/t-sql/functions/conversion-functions-transa
 ---------------------------------------------------
 Funções Cadeia de Caracteres
 https://docs.microsoft.com/pt-br/sql/t-sql/functions/string-functions-transact-sql?redirectedfrom=MSDN&view=sql-server-ver15
+
+---------------------------------------------------
+Expressão Case
+https://docs.microsoft.com/pt-br/sql/t-sql/language-elements/case-transact-sql?view=sql-server-ver15
