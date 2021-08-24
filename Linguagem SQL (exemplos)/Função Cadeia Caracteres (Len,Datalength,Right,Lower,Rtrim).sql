@@ -1,0 +1,48 @@
+/* (LEN) RETORNA O NUMERO DE CARACTERES DA EXPRESSAO EXCLUINDO
+ESPAÇOS EM BRANCO A DIREITA */
+SELECT
+	FirstName,
+	LEN(Firstname) AS 'Qtds - LEN'
+FROM Sales.vIndividualCustomer
+WHERE CountryRegionName = 'Australia'
+
+
+/* (DATALENGTH) RETORNA O NUMERO DE BYTES */
+SELECT
+	Name,
+	DATALENGTH(Name) AS 'Qtde Bytes'
+FROM Production.Product
+ORDER BY Name
+
+
+/* (RIGHT) RETORNA A PARTE DIREITA DE UMA CADEIA DE CARACTERES INFORMANDO A QUANTIDADE */
+use curso
+
+SELECT
+	estado,
+	RIGHT(estado, 5) AS 'Estado Right'
+FROM regiao_uf
+
+
+/* (LOWER) RETORNA EXPRESSAO DE CARACTERES DEPOIS DE CONVERTER 
+PARA MINUSCULAS OS DADOS DE CARACTERES EM MAIUSCULAS*/
+use AdventureWorks2014
+
+SELECT
+	SUBSTRING(Name,1,20) AS 'NAME SUBSTRING',
+	LOWER(SUBSTRING(Name,1,20)) AS 'NOME LOWER',
+	UPPER(SUBSTRING(Name,1,20)) AS 'NOME UPPER',
+	LOWER(UPPER(SUBSTRING(Name,1,20))) AS 'NOME LOWER UPPER'
+FROM Production.Product
+WHERE ListPrice BETWEEN 11.00 AND 20.00
+
+
+/* (RTRIM) REMOVE O ESPAÇO EM BRANCO AO FINAL*/
+--1° EXEMPLO
+SELECT RTRIM('Removendo Espaços.   ')
+
+--2° EXEMPLO
+DECLARE @string_to_trim VARCHAR(60)
+SET @string_to_trim = 'Deixamos 4 espaços apos final da sentença.    '
+SELECT @string_to_trim + ' proxima string.'
+SELECT RTRIM(@string_to_trim) + ' proxima string.'
