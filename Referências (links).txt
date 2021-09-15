@@ -70,3 +70,11 @@ https://docs.microsoft.com/pt-br/sql/t-sql/functions/string-functions-transact-s
 ---------------------------------------------------
 Expressão Case
 https://docs.microsoft.com/pt-br/sql/t-sql/language-elements/case-transact-sql?view=sql-server-ver15
+
+---------------------------------------------------
+Expressão NULLIF
+https://docs.microsoft.com/pt-br/sql/t-sql/language-elements/nullif-transact-sql?redirectedfrom=MSDN&view=sql-server-ver15
+
+---------------------------------------------------
+VIEWS
+https://docs.microsoft.com/pt-br/sql/t-sql/statements/create-view-transact-sql?view=sql-server-ver15
