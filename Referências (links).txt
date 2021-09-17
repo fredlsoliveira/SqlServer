@@ -78,3 +78,7 @@ https://docs.microsoft.com/pt-br/sql/t-sql/language-elements/nullif-transact-sql
 ---------------------------------------------------
 VIEWS
 https://docs.microsoft.com/pt-br/sql/t-sql/statements/create-view-transact-sql?view=sql-server-ver15
+
+---------------------------------------------------
+Dados em Massa - BULK INSERT
+https://docs.microsoft.com/pt-br/sql/t-sql/statements/bulk-insert-transact-sql?redirectedfrom=MSDN&view=sql-server-ver15

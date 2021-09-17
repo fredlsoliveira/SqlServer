@@ -1,0 +1,11 @@
+00001|Café
+00002|Leite
+00003|Agua
+00004|Açucar
+00005|Oléo
+00006|Chocolate
+00007|Refrigerante
+00008|Pão
+00009|Macarrão
+00010|Arroz
+00011|Farinha
