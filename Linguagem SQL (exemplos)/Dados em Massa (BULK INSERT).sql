@@ -15,7 +15,7 @@ BULK INSERT PRODUTO
 FROM '/home/fredoliveira/Downloads/Bulk/carga/Dados em Massa (tb produto).txt'
 WITH
 (
-    CODEPAGE = 'RAW',
+	CODEPAGE = 'RAW',
 	DATAFILETYPE = 'CHAR',
 	FIELDTERMINATOR = '|',
 	ROWTERMINATOR = '\n',
