@@ -82,3 +82,7 @@ https://docs.microsoft.com/pt-br/sql/t-sql/statements/create-view-transact-sql?v
 ---------------------------------------------------
 Dados em Massa - BULK INSERT
 https://docs.microsoft.com/pt-br/sql/t-sql/statements/bulk-insert-transact-sql?redirectedfrom=MSDN&view=sql-server-ver15
+
+---------------------------------------------------
+Dados em Massa - BCP
+https://docs.microsoft.com/pt-br/sql/tools/bcp-utility?view=sql-server-ver15&redirectedfrom=MSDN&viewFallbackFrom=sql-server-2014
