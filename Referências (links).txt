@@ -86,3 +86,11 @@ https://docs.microsoft.com/pt-br/sql/t-sql/statements/bulk-insert-transact-sql?r
 ---------------------------------------------------
 Dados em Massa - BCP
 https://docs.microsoft.com/pt-br/sql/tools/bcp-utility?view=sql-server-ver15&redirectedfrom=MSDN&viewFallbackFrom=sql-server-2014
+
+---------------------------------------------------
+Extensão SQL -Condição IF..ELSE
+https://docs.microsoft.com/pt-br/sql/t-sql/language-elements/if-else-transact-sql?view=sql-server-ver15
+
+---------------------------------------------------
+Estrutura de Repetição -WHILE
+https://docs.microsoft.com/pt-br/sql/t-sql/language-elements/while-transact-sql?view=sql-server-ver15
