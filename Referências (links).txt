@@ -94,3 +94,5 @@ https://docs.microsoft.com/pt-br/sql/t-sql/language-elements/if-else-transact-sq
 ---------------------------------------------------
 Estrutura de Repetição -WHILE
 https://docs.microsoft.com/pt-br/sql/t-sql/language-elements/while-transact-sql?view=sql-server-ver15
+
+---------------------------------------------------
