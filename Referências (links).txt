@@ -96,3 +96,5 @@ Estrutura de Repetição -WHILE
 https://docs.microsoft.com/pt-br/sql/t-sql/language-elements/while-transact-sql?view=sql-server-ver15
 
 ---------------------------------------------------
+Cursores
+https://docs.microsoft.com/pt-br/sql/t-sql/language-elements/cursors-transact-sql?view=sql-server-ver15

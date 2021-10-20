@@ -1,0 +1,19 @@
+use curso
+
+--CURSORES (EXEMPLO 1)
+DECLARE @MinhaVariavel VARCHAR(100)
+DECLARE meu_cursor
+CURSOR LOCAL FOR SELECT nome FROM alunos
+OPEN meu_cursor
+FETCH NEXT FROM meu_cursor INTO @MinhaVariavel
+
+WHILE(@@FETCH_STATUS = 0)
+	BEGIN
+	PRINT @MinhaVariavel+ ' FETCH_STATUS-> '+CAST(@@FETCH_STATUS AS VARCHAR(10))
+
+	FETCH NEXT FROM meu_cursor INTO @MinhaVariavel
+END
+
+PRINT 'FETCH_STATUS-> '+CAST(@@FETCH_STATUS AS VARCHAR(10))
+CLOSE meu_cursor
+DEALLOCATE meu_cursor
