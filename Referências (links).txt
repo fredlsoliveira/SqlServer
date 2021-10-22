@@ -98,3 +98,7 @@ https://docs.microsoft.com/pt-br/sql/t-sql/language-elements/while-transact-sql?
 ---------------------------------------------------
 Cursores
 https://docs.microsoft.com/pt-br/sql/t-sql/language-elements/cursors-transact-sql?view=sql-server-ver15
+
+---------------------------------------------------
+Funções
+https://docs.microsoft.com/pt-br/sql/t-sql/statements/create-function-transact-sql?view=sql-server-ver15
